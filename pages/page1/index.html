@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feature 2</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-
-
+    <script src="./assets/js/scripts.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <nav class="navbar">
@@ -18,7 +16,6 @@
             <ul>
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="../page1/index.html">Fundamentals</a></li>
-
             </ul>
         </div>
     </nav>
@@ -31,26 +28,38 @@
         <div class="Aa">
             <h2>Variable Declaration</h2>
             <p>Variable declaration in IT refers to the process of defining a variable and optionally assigning it a value. It establishes a named memory location for storing data that can be used and manipulated throughout a program. In statically typed languages (e.g., Java, C), the data type must be specified, while in dynamically typed languages (e.g., Python), the type is inferred when the value is assigned. Proper variable declaration is essential for memory management, readability, and type safety, ensuring that data is stored correctly and the program runs smoothly.</p>
+            <button onclick="showVariable()">Show Variable</button>
+            <div class="output" id="output"></div>
         </div>
     </div>
+
     <div class="container2" id="bb">
-        <div class="bb" >
+        <div class="bb">
             <h2>Input and Output</h2>
-            <p>
-                Input refers to the data or information provided to a program or system for processing, which can come from sources like the user, files, or other programs. Examples of input include a user entering a name in a form, reading a file, or clicking a button in an application. Output, on the other hand, is the result produced by the program after processing the input, such as a displayed message, a generated file, or the result of a calculation. For example, in a simple program where two numbers are added, the input would be the two numbers, and the output would be their sum.</p>
+            <p>Input refers to the data or information provided to a program or system for processing, which can come from sources like the user, files, or other programs. Examples of input include a user entering a name in a form, reading a file, or clicking a button in an application. Output, on the other hand, is the result produced by the program after processing the input, such as a displayed message, a generated file, or the result of a calculation. For example, in a simple program where two numbers are added, the input would be the two numbers, and the output would be their sum.</p>
+            <input type="text" id="userInput" placeholder="Enter your name">
+            <button onclick="processInput()">Submit</button>
+            <div class="output" id="inputOutput"></div>
         </div>
     </div>
+    
     <div class="container3" id="cc">
         <div class="cc">
             <h2>Conditional Statement</h2>
-            <p>
-                A conditional statement is a programming construct that allows the execution of certain code based on whether a specific condition is true or false. It helps control the flow of a program by enabling it to make decisions. For example, an if statement checks if a condition is true and executes a block of code if it is, while an else or elif (else if) statement can provide alternative actions if the condition is false. Conditional statements are fundamental in programming for tasks like validating user input, making decisions based on comparisons, or controlling loops.</p>
+            <p>A conditional statement is a programming construct that allows the execution of certain code based on whether a specific condition is true or false. It helps control the flow of a program by enabling it to make decisions. For example, an if statement checks if a condition is true and executes a block of code if it is, while an else or elif (else if) statement can provide alternative actions if the condition is false. Conditional statements are fundamental in programming for tasks like validating user input, making decisions based on comparisons, or controlling loops.</p>
+            <input type="number" id="conditionalInput" placeholder="Enter your age">
+            <button onclick="checkCondition()">Check Age</button>
+            <div class="output" id="conditionalOutput"></div>
         </div>
     </div>
-    <div class="container3" id="cc">
-        <div class="cc">
+
+    <div class="container4" id="dd">
+        <div class="dd">
             <h2>Looping Statement</h2>
             <p>A looping statement is a programming construct that repeats a block of code multiple times based on a specified condition. It allows for efficient execution of repetitive tasks without needing to write the same code repeatedly. There are different types of loops, such as the for loop, which iterates over a specific range or collection, and the while loop, which continues executing as long as a given condition remains true. Loops are essential for tasks like iterating through data, performing repeated calculations, or handling user input until certain conditions are met.</p>
+            <input type="number" id="loopInput" placeholder="Enter a number for the loop">
+            <button onclick="showLoopResult()">Run Loop</button>
+            <div class="output" id="loopOutput"></div>
         </div>
     </div>
 
@@ -58,9 +67,6 @@
         <div class="copyright">
             <p>&copy; Kobe George U. Banganay</p>
         </div>
-
     </footer>
 </body>
-
-
 </html>

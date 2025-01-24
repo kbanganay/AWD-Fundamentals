@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
 
-
 .graduate-regular {
     font-family: "Graduate", serif;
     font-weight: 400;
     font-style: normal;
-  }
-
+}
 
 * {
     margin: 0;
@@ -29,6 +27,9 @@ body {
 .navbar {
     background-color: black;
     padding: 15px;
+    position: sticky;
+    top: 0; /* Add this to make it stick to the top */
+    z-index: 1000; /* Optional: Ensures the navbar stays on top of other content */
 }
 
 .navdiv {
@@ -83,13 +84,12 @@ body {
 }
 
 .hero h1 {
-    color: white; /* Text color */
+    color: white;
     font-size: 50px;
-    text-shadow: 1px 3px 3px #333;
-    outline: 1px solid rgb(117, 0, 0);
+    text-shadow: 3px 10px 10px #333;
     border-radius: 1rem;
     padding: 2rem;
-    background-color: black; /* Set your desired background color */
+    background-color: rgb(184, 0, 0);
     background-size: 100%;
     background-position-y: 30%;
     background-repeat: no-repeat;
@@ -100,11 +100,24 @@ body {
 .hero h1:hover {
     background-size: 120%;
     border-color: white;
-    color: red; /* Change this to your desired hover color */
-    text-shadow: 1px 3px 3px #000; /* Adjust text shadow if needed */
+    color: black;
+    text-shadow: 1px 3px 3px #000;
 }
 
-.container1,
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    padding: 20px;
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+}
+
 .container2,
 .container3,
 .container4 {
@@ -117,12 +130,159 @@ body {
     background-blend-mode: soft-light;
     padding: 20px;
     width: 100%;
-    height: 400px;
+    height: 550px;
+    margin-top: 10px;
+}
+
+.container1 .Aa {
+    text-align: center;
+    max-width: 800px;
+}
+
+.container1 .Aa h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.container1 .Aa p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.container1 .Aa button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container1 .Aa button:hover {
+    background-color: green;
+    color: white;
+}
+
+.container1 .Aa .output {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+.container2 .bb input {
+    padding: 10px;
+    font-size: 1em;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.container2 .bb button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+}
+
+.container2 .bb button:hover {
+    background-color: #218838;
+}
+
+.container2 .bb .output {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+.container3 .cc input {
+    padding: 10px;
+    font-size: 1em;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.container3 .cc button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.container3 .cc button:hover {
+    background-color: #218838;
+}
+
+.container3 .cc .output.minor {
+    color: red;
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+.container3 .cc .output.adult {
+    color: green;
+    font-size: 1.2em;
+}
+
+.container3 .cc .output.senior {
+    color: blue;
+    font-size: 1.2em;
+}
+
+.container4 .dd input {
+    padding: 10px;
+    font-size: 1em;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.container4 .dd button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container4 .dd button:hover {
+    background-color: #218838;
+}
+
+.container4 .dd .output {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #FFD700;
 }
 
 .Aa,
 .bb,
-.cc {
+.cc,
+.dd {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,21 +293,24 @@ body {
 
 .Aa:hover,
 .bb:hover,
-.cc:hover {
-    transform: translateY(10%);
+.cc:hover,
+.dd:hover {
+    transform: translateY(-5%);
     background-color: black;
-    border-radius: 20px; /* Adjust this value for more or less curvature */
+    border-radius: 20px;
 }
 
 .Aa h2,
 .bb h2,
-.cc h2 {
+.cc h2,
+.dd h2 {
     color: red;
 }
 
 .Aa p,
 .bb p,
-.cc p {
+.cc p,
+.dd p {
     color: white;
     text-shadow: 1px 3px 3px #333;
     font-size: 20px;
@@ -155,28 +318,27 @@ body {
 
 .Aa p,
 .bb p,
-.cc p {
+.cc p,
+.dd p {
     color: white;
     text-shadow: 1px 3px 3px #333;
     font-size: 15px;
-    max-width: 700px; /* Set max-width to your desired value */
-    width: 100%; /* Ensure full width within max-width */
-    margin: 0 auto; /* Center the paragraph */
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-
 .footer {
-background: #838383;
-padding: 10px 20px;
-text-align: center;
-
+    background: #838383;
+    padding: 10px 20px;
+    text-align: center;
 }
 
 .copyright {
-
     font-size: 0.8em;
     color: white;
 }
+
 html {
     scroll-behavior: smooth;
 }
